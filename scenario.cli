@@ -1,0 +1,9 @@
+h2 xterm -title 'H2-Server' -hold -e 'python3 -m http.server 8080' &
+sh sleep 1
+h8 xterm -title 'h8-Benign' -hold -e 'bash ./benign_traffic.sh' &
+h4 xterm -title 'h4-Benign' -hold -e 'bash ./benign_traffic.sh' &
+h3 xterm -title 'h3-Benign' -hold -e 'bash ./benign_traffic.sh' &
+h7 xterm -title 'h7-Benign' -hold -e 'bash ./benign_traffic.sh' &
+sh sleep 2
+h5 xterm -title 'h5-Attack' -hold -e 'bash ./attack_traffic.sh' &
+h6 xterm -title 'h6-Attack' -hold -e 'bash ./attack_traffic.sh' &
