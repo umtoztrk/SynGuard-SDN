@@ -1,0 +1,29 @@
+version: '3.8'
+
+services:
+  ai-backend:
+    build: .
+    container_name: synguard_ai
+    ports:
+      - "8000:8000"
+    restart: unless-stopped
+
+  node-backend:
+    build: ./synguard-dashboard/backend
+    container_name: synguard_node_backend
+    ports:
+      - "3001:3001"
+    volumes:
+      - ./db_data:/app/db_data
+    restart: unless-stopped
+
+  frontend-dashboard:
+    build: ./synguard-dashboard/frontend
+    container_name: synguard_dashboard
+    ports:
+      - "5173:5173"
+    depends_on:
+      - node-backend
+      - ai-backend
+    restart: unless-stopped
+

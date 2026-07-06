@@ -21,7 +21,7 @@ const io = new Server(server, {
 // ==========================================
 // 1. DATABASE (SQLite) SETUP AND TABLES
 // ==========================================
-const db = new sqlite3.Database('./synguard.db', (err) => {
+const db = new sqlite3.Database('./db_data/synguard.db', (err) => {
     if (err) console.error("[-] Database Error:", err.message);
     else console.log("[+] SQLite Database Connection Successful (synguard.db)");
 });

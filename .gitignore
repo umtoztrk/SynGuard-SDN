@@ -1,0 +1,7 @@
+node_modules/
+db_data/
+*.db
+.env
+__pycache__/
+*.swo
+*.swp

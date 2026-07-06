@@ -31,7 +31,7 @@ class Payload(BaseModel):
 # --- FUNCTION TO SEND LIVE DATA TO DASHBOARD ---
 def send_to_dashboard(src_ip, status, prob, det_time):
     try:
-        url = "http://127.0.0.1:3001/api/traffic-log" 
+        url = "http://node-backend:3001/api/traffic-log" 
         payload = {
             "src_ip": src_ip,
             "status": status,
@@ -40,7 +40,8 @@ def send_to_dashboard(src_ip, status, prob, det_time):
         }
         requests.post(url, json=payload, timeout=1) 
     except Exception as e:
-        pass 
+        print(f"\n\033[91m[!] DASHBOARD BAĞLANTI HATASI: {e}\033[0m")
+        #pass
 # --------------------------------------------------
 
 @app.post("/predict")
