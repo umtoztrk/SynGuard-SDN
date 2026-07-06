@@ -1,0 +1,50 @@
+name: SynGuard CI/CD Pipeline
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build-ai-backend:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v3
+      
+    - name: Set up Python 3.10
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'
+        
+    - name: Install Backend Dependencies
+      run: |
+        python -m pip install --upgrade pip
+        if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+        
+    - name: Check Syntax (Dry Run)
+      run: |
+        # Sadece kodda ölümcül bir yazım hatası var mı diye kontrol eder
+        python -m py_compile *.py
+
+  build-react-frontend:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./synguard-dashboard/frontend
+        
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v3
+      
+    - name: Set up Node.js 18
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18'
+        
+    - name: Install Frontend Dependencies
+      run: npm install
+        
+    - name: Build Frontend
+      run: npm run build
