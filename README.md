@@ -12,6 +12,24 @@ SYNGUARD is an advanced, AI-powered Intrusion Detection System (IDS) tailored fo
 
 The entire backend, AI engine, and real-time dashboard are fully containerized using Docker, ensuring a seamless, platform-agnostic deployment with zero configuration headaches.
 
+## 📸 Screenshots
+
+### 🔐 Login Screen
+<img width="1846" height="792" alt="admin login" src="https://github.com/user-attachments/assets/4f98d631-571e-4e3a-ab58-9c3e9b0d8a73" />
+<img width="1848" height="785" alt="user login" src="https://github.com/user-attachments/assets/346c82ca-49ef-4474-86e4-6b5b1318a2e3" />
+
+### 🚨 Live Traffic & Incident Logs
+<img width="1850" height="883" alt="LiveTraffic" src="https://github.com/user-attachments/assets/489ccd03-99e7-4e31-ba9c-6696ee113b7d" />
+<img width="1845" height="793" alt="Incident Logs" src="https://github.com/user-attachments/assets/465086bb-945a-4f59-b6c1-be430a2c189a" />
+
+### 🕸️ SDN Topology Map
+<img width="1849" height="878" alt="Topology Map" src="https://github.com/user-attachments/assets/1fcbcf0e-4840-4a00-9cbf-cbca87200507" />
+
+### 💻 OS-Ken SDN Controller Terminal
+<img width="1849" height="790" alt="osken terminal" src="https://github.com/user-attachments/assets/5cf05f31-49ac-412d-9d28-4976c5cb5c3e" />
+
+### 👥 User Management
+<img width="1849" height="786" alt="user management" src="https://github.com/user-attachments/assets/93882474-b0d3-41b0-b8cf-503f1ee28a47" />
 
 ## ✨ Key Features
 * **Real-Time Traffic Analysis:** Monitors network flow and detects anomalies in milliseconds.
@@ -84,5 +102,5 @@ SYNGUARD/
         └── Dockerfile          # Frontend container setup
 ```
 
-🤝 Contributing
+## 🤝 Contributing
 Contributions, issues, and feature requests are welcome! Feel free to check the issues page.
