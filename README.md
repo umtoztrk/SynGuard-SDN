@@ -37,7 +37,7 @@ The entire backend, AI engine, and real-time dashboard are fully containerized u
 ### Installation
 **1. Clone the repository**
 ```bash
-git clone [https://github.com/yourusername/SYNGUARD.git](https://github.com/yourusername/SYNGUARD.git)
+git clone https://github.com/yourusername/SYNGUARD.git
 cd SYNGUARD
 ```
 **2. Start the Dockerized Services (Backend, AI, UI, Database)**
