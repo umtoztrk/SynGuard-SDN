@@ -152,7 +152,7 @@ SYNGUARD/
 * **No simulated traffic:** Verify that the controller and Mininet started successfully and that `source scenario.cli` was entered in the Mininet CLI, not the host shell.
 
 ## 🤝 Contributing
-Contributions, issues, and feature requests are welcome! Feel free to check the issues page.
+Contributions, bug reports, and feature requests are welcome. Please open an [issue](https://github.com/umtoztrk/SynGuard-SDN/issues) or submit a pull request.
 
 ## 👥 Project Contributors
 
