@@ -55,8 +55,10 @@ The entire backend, AI engine, and real-time dashboard are fully containerized u
 ### Installation
 **1. Clone the repository**
 ```bash
-git clone https://github.com/yourusername/SYNGUARD.git
-cd SYNGUARD
+git clone https://github.com/umtoztrk/SynGuard-SDN.git
+cd SynGuard-SDN<img width="1414" height="2397" alt="indir (21)" src="https://github.com/user-attachments/assets/f4a90d9c-8b9c-417e-b959-832aee6461d8" />
+<img width="1414" height="2397" alt="indir (21)" src="https://github.com/user-attachments/assets/d6e2ae28-bac3-48d4-b5aa-dc5e12d206ad" />
+
 ```
 **2. Start the Dockerized Services (Backend, AI, UI, Database)**
 ```bash
