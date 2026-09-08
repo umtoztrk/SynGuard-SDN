@@ -42,6 +42,16 @@ The entire backend, AI engine, and real-time dashboard are fully containerized u
 * **Live Dashboard:** React/Vite-based modern UI with WebSocket integration for live attack visualization and management.
 
 ## 🏗️ System Architecture
+
+```mermaid
+flowchart LR
+    A[Mininet Network Emulation] -->|OpenFlow traffic and statistics| B[OS-Ken SDN Controller]
+    B -->|Extracted flow features| C[Python / XGBoost Inference API]
+    C -->|DDoS prediction results| D[Node.js Backend]
+    D -->|Persist and query incidents| E[(SQLite Database)]
+    D -->|WebSocket and REST updates| F[React Dashboard]
+```
+
 1. **Network Layer:** Mininet generates realistic benign and malicious traffic.
 2. **Control Layer:** Osken SDN Controller captures flow statistics and routes them to the AI engine.
 3. **AI Layer:** The Python API analyzes packets instantly using the XGBoost model.
