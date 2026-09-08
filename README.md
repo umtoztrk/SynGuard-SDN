@@ -10,6 +10,9 @@
 ## 📖 About The Project
 SYNGUARD is an advanced, AI-powered Intrusion Detection System (IDS) tailored for Software-Defined Networks (SDN). By combining the flexibility of Mininet and the analytical power of XGBoost machine learning algorithms, SYNGUARD detects and mitigates L4 DDoS attacks in real-time. 
 
+<img width="1409" height="1421" alt="indir (22)" src="https://github.com/user-attachments/assets/b50c8e15-0525-4d49-91b7-5d893ef51f52" />
+
+
 The entire backend, AI engine, and real-time dashboard are fully containerized using Docker, ensuring a seamless, platform-agnostic deployment with zero configuration headaches.
 
 ## 📸 Screenshots
@@ -56,8 +59,7 @@ The entire backend, AI engine, and real-time dashboard are fully containerized u
 **1. Clone the repository**
 ```bash
 git clone https://github.com/umtoztrk/SynGuard-SDN.git
-cd SynGuard-SDN<img width="1414" height="2397" alt="indir (21)" src="https://github.com/user-attachments/assets/f4a90d9c-8b9c-417e-b959-832aee6461d8" />
-<img width="1414" height="2397" alt="indir (21)" src="https://github.com/user-attachments/assets/d6e2ae28-bac3-48d4-b5aa-dc5e12d206ad" />
+cd SynGuard-SDN
 
 ```
 **2. Start the Dockerized Services (Backend, AI, UI, Database)**
