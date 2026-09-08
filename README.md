@@ -153,3 +153,9 @@ SYNGUARD/
 
 ## 🤝 Contributing
 Contributions, issues, and feature requests are welcome! Feel free to check the issues page.
+
+## 👥 Project Contributors
+
+* [Taha Aydın](https://github.com/ttahaydn) (`@ttahaydn`)
+* [Atakan Berber](https://github.com/aetherr07) (`@aetherr07`)
+* [Eren Eroğlu](https://github.com/ErenEroglu3) (`@ErenEroglu3`)
